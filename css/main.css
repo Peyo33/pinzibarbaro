@@ -1,0 +1,1163 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*------CODICE NOSTRO-------*/
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  color: #2d2d2c;
+}
+
+p, h2, h1, h3, h4{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper1{
+
+  max-width: 1920px;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 10000;
+  top:0;
+  left: 0;
+
+}
+
+header{
+  width: 100%;
+  /* background-color: #2d2d2c; */
+  color: #f6f1e3;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+header ul{
+  margin: 0 auto;
+  padding: 0;
+  width:90%;
+  padding: 40px 0;
+  position: relative;
+}
+
+header li{
+  display: inline-block;
+  list-style: none;
+
+}
+
+header li:first-child{
+  margin-right: 4%;
+}
+
+header li:last-child{
+  position: absolute;
+  right: 0;
+}
+
+header a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 700 24px 'Work Sans', sans-serif;
+  color: #2d2d2c;
+}
+
+.txtcart{
+  display: none;
+}
+
+.cart{
+  display: inline-block;
+  background: url(../img/cart.png) 0 0 no-repeat transparent;
+  height: 33px;
+  width: 36px;
+  background-size: cover;
+}
+
+
+.cover{
+  width: 90%;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  z-index: 10000000;
+  position: relative;
+
+
+}
+.cover img{
+  width: 100%;
+  max-width: 644px;
+
+}
+.cover h2{
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: right;
+  color: #2d2d2c;
+}
+
+.logo{
+  position: absolute;
+  left: -4.5%;
+  top: -40px;
+  width: 50%;
+  max-width: 160px;
+  z-index: 10000;
+}
+
+.first{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e53020;
+  padding-top:80px;
+  padding-bottom: 80px;
+}
+.first:after{
+content: '';
+display: block;
+clear: both;
+}
+
+.first::after{
+content: '';
+display: block;
+clear: both;
+}
+
+.first h3{
+  color:#f6f1e3;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+
+  padding-left:5%;
+}
+
+.first p{
+  font: 400 20px 'Work Sans', sans-serif;
+  margin:0 5%;
+  width: 90%;
+  padding: 20px 0;
+  line-height: 30px;
+  color:#f6f1e3;
+}
+
+.first p.shop{
+  font-weight: 700;
+}
+
+.first .fotoabout{
+  width:90%;
+  margin-right:5%;
+  margin-left:5%;
+  background: url(../img/lente-01.jpg) 50% 50% no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
+.second{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f1e3;
+}
+
+
+.center{
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.second h3{
+  font-size: 50px;
+  font-weight: 700;
+  color: #2d2d2c;
+  margin-bottom: 20px;
+  line-height: 55px;
+}
+
+.center p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container:after{
+content: '';
+display: block;
+clear: both;
+}
+
+.container::after{
+content: '';
+display: block;
+clear: both;
+}
+
+.btnfake{
+  display: none;
+}
+
+.uno, .due, .tre{
+  width: 100%;
+  margin-top: 80px;
+}
+
+.tre{
+  padding-bottom:80px;
+}
+
+.imguno{
+  background: url(../img/eshop1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgdue{
+  background: url(../img/eshop2.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.imgtre{
+  background: url(../img/eshop3.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.animateBlock {
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.animateBlock.left {
+  left: -50%;
+}
+
+.left.animated {
+  left: 0%;
+  opacity: 1;
+}
+
+.imguno p {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #e53020;
+  color: #f6f1e3;
+  font: 700 16px 'Work Sans', sans-serif;
+  width: auto;
+  position: absolute;
+  right: 2%;
+}
+
+.txtbox p{
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 20px 0 0;
+}
+
+.txtbox h4{
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.txtbox .red{
+  color: #e53020;
+  padding-top: 5px;
+}
+
+.last{
+  background-color: #E53020;
+  width:100%;
+}
+
+.wrapper{
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.last h3{
+  font-size: 50px;
+  font-weight: 700;
+  color: #F6F1E3;
+  margin-bottom: 20px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.last h4{
+  font-size: 22px;
+  font-weight: 400;
+  color: #F6F1E3;
+  margin-bottom: 80px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.lastsx p{
+  font-size: 24px;
+  font-weight: 600;
+  color: #F6F1E3;
+  margin-bottom: 50px;
+  line-height: 28px;
+  /*margin-left: 10%;*/
+  text-align: center;
+}
+
+.boxdin{
+  width: 90%;
+  height: 213px;
+  background: url("../img/logo_din2.png") no-repeat 0 0;
+  background-size: contain;
+  max-width:426px;
+  margin: auto;
+  padding-top: 35px;
+}
+
+.animateFade {
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.fade.animated {
+  opacity: 1;
+}
+
+.logodin{
+  width:100%;
+}
+
+.lastsx p.din{
+  margin:0;
+  padding:0;
+}
+
+.lastsx p.din span{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.lastdx p{
+  font-size: 20px;
+  font-weight: 400;
+  color: #F6F1E3;
+  margin:0;
+  line-height: 28px;
+  width:90%;
+  margin: 0 5% 50px 5%;
+}
+
+footer{
+  background-color: #2D2D2C;
+  padding: 50px 5%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.logonid{
+  width: 115px;
+  margin-left:10%;
+  float: left;
+}
+.logofooter{
+  width: 72px;
+  margin-left:10%;
+  float:right;
+}
+
+.animateSlideup {
+  opacity: 0;
+  bottom: -50px;
+  position: relative;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.slideup.animated {
+  opacity: 1;
+  bottom: -10px;
+}
+
+
+
+.boxfooter{
+  width:90%;
+  padding: 80px 5% 0 5%;
+  clear: both;
+}
+
+ul.contatti li a {
+  color: #F6F1E3;
+  font-size:19px;
+  font-weight: 600;
+  text-align: center;
+}
+
+ul.contatti{
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+
+ul.contatti li{
+  list-style: none;
+  text-align: center;
+  padding-top: 15px;
+  color: #F6F1E3;
+  font-size:19px;
+  font-weight: 600;
+}
+
+ul.contatti li a{
+  text-decoration: none;
+}
+
+ul.contatti span{
+  display:none;
+}
+
+#slidelist, #slidelist_m {
+    width:100%;
+
+}
+#slidelist{
+  display: none;
+}
+.slide{
+  width:100%;
+  max-width: 1920px;
+
+}
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   @media screen and (min-width:420px) {
+  .boxdin{
+    padding-top: 70px;
+  }
+     }
+
+  @media screen and (min-width:500px){
+    #slidelist_m{
+      display: none;
+    }
+    #slidelist{
+      display: block;
+    }
+  }
+@media screen and (min-width:600px) {
+  .txtcart{
+    display: inline-block;
+  }
+
+
+
+  .cart{
+    margin:0 3%;
+  }
+
+  header ul{
+    padding:50px 0 100px 0;
+  }
+
+  header li:last-child{
+    width: 33%;
+    text-align: right;
+  }
+
+  .cover h2{
+    font-size: 28px;
+  }
+  .first .fotoabout{
+    height:800px;
+  }
+
+}
+
+@media screen and (min-width:750px) {
+
+
+  .boxdin{
+    width: 100%;
+    padding-top: 50px;
+
+  }
+  .lastsx p.din{
+    margin-left: 17%;
+  }
+
+  .imgtre, .txtbox{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo{
+    max-width: 300px;
+    top: -77px;
+  }
+
+  .cover h2{
+    font-size: 36px;
+    margin-top: 36px;
+
+  }
+
+  .cover img{
+    width: 100%;
+  }
+
+
+
+  .imguno{
+    height: 590px;
+  }
+
+
+  .uno, .due{
+    float: left;
+    width: 45%;
+  }
+
+  .uno{
+    margin-right: 5%;
+  }
+
+  .due{
+    margin-left: 5%;
+  }
+
+  .tre{
+    clear: both;
+    padding-top:80px;
+  }
+
+  .center p {
+    width: 80%;
+    margin: auto 10%;
+  }
+
+  .last h4 {
+      font-size: 32px;
+      line-height: 42px;
+  }
+
+  .last h3 {
+      font-size: 60px;
+      line-height: 65px;
+  }
+
+  .lastsx, .lastdx{
+    width:50%;
+    float:left;
+  }
+
+  .ferma{
+    clear:both;
+  }
+
+  .lastsx p{
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 17%;
+  }
+
+  .first{
+    padding-top:150px;
+    padding-bottom: 150px;
+  }
+
+  .first .fotoabout{
+    float:left;
+    margin:0;
+    margin:0px 5%;
+  }
+
+  .first .about{
+    float:left;
+    margin:0;
+    width: 100%;
+  margin: 50px auto;
+  }
+
+  .first h3{
+    padding-top:0;
+  }
+
+  .first::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+}
+
+@media screen and (min-width:976px) {
+
+  .first .fotoabout{
+    float:left;
+    margin:0;
+
+    margin:0px 5%;
+  }
+
+  .lastsx{
+    width: 40%;
+    margin-left: 3%;
+  }
+
+  .lastdx{
+    width:53%;
+
+  }
+
+  .logonid, .logofooter{
+    float: left;
+    margin: 0;
+  }
+
+  .logofooter{
+    margin-left: 10%;
+  }
+
+  .boximgfooter{
+    width:30%;
+    float: left;
+  }
+
+  .boxfooter{
+    width: 70%;
+    padding: 0;
+    float: left;
+    clear: none;
+  }
+
+  p.touch, ul.contatti li a {
+    color: #F6F1E3;
+    font-size:19px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  p.touch {
+    padding-bottom: 20px;
+  }
+
+  ul.contatti{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    text-align: right
+  }
+
+  ul.contatti li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding-top: 15px;
+    color: #F6F1E3;
+    font-size:19px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  ul.contatti li a{
+    text-decoration: none;
+  }
+
+  ul.contatti span{
+    display:inline-block;
+  }
+
+  ul.contatti li:first-child {
+    margin-right: 5%;
+  }
+
+  .cover img{
+    padding-left: 25%;
+  }
+
+
+}
+
+@media screen and (min-width:1200px){
+
+  .boxdin {
+      width: 100%;
+      position: relative;
+      left: 0%;
+      padding-bottom: 80px;
+      margin-left: 3%;
+
+  }
+
+  .cover h2{
+    font-size: 48px;
+  }
+
+  .btnfake{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2D2D2C;
+    text-transform: uppercase;
+    float:left;
+    width:10%;
+    text-align: center;
+    padding-top:300px;
+  }
+
+  .tre{
+    clear: none;
+    float: left;
+  }
+
+  .container::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .imgtre, .txtbox{
+    width: 100%;
+  }
+
+
+  .uno, .due, .tre{
+    width: 30%;
+    margin:0;
+    padding:0;
+  }
+
+  .due{
+    margin:0 5%;
+  }
+
+  .container{
+    width: 80%;
+    float:left;
+  }
+
+  .boxgallery{
+    width:100%;
+    padding:100px 0 170px 0;
+  }
+
+  .boxgallery:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .boxgallery::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .center p{
+    width: 40%;
+    margin: auto 30%;
+  }
+
+  .last h4 {
+      font-size: 48px;
+      line-height: 60px;
+      padding-bottom: 100px;
+  }
+
+  .last h3 {
+      font-size: 80px;
+      line-height: 92px;
+  }
+
+  .first .about{
+    width:30%;
+    margin-left: 10%;
+    margin-right:10%;
+  }
+  .first .fotoabout{
+
+    width: 40%;
+  }
+  .first h3{
+    margin-top: 200px;
+  }
+
+  .cover img{
+    padding-left: 40%;
+  }
+
+}
+
+
+@media screen and (min-width:1500px) {
+
+.boxdin {
+    width: 100%;
+    position: relative;
+    left: 0%;
+    padding-bottom: 80px;
+    margin-left: 4.5%;
+
+}
+
+/*.first h3{
+  padding-top:0;
+  margin-top: 275px;
+}*/
+  .logo{
+    max-width: 553px;
+    top: -151px;
+  }
+
+  .cover h2{
+    font-size: 58px;
+    margin-right:10%;
+  }
+
+  /*.first .fotoabout {
+    height: 800px;
+}*/
+
+}
+
+@media screen and (min-width:1700px) {
+
+  .cover img{
+    width: 100%;
+  }
+
+  .cover h2{
+    width: 95%;
+  }
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

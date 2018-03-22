@@ -26,7 +26,7 @@ $("#slidelist_m").owlCarousel({
 });
 });
 
-$('a').click(function(e){
+$('[href= "#footer" ]').click(function(e){
   e.preventDefault();
   var nnn = $(this).attr('href').replace("#", "");
   var ttt = $('[name="'+nnn+'"]').offset().top - 80;
@@ -36,13 +36,12 @@ $('a').click(function(e){
 });
 
 $(function() {
-  var $elements = $('.animateBlock.notAnimated'); //contains all elements of nonAnimated class
+  var $elements = $('.notAnimated'); //contains all elements of nonAnimated class
   var $window = $(window);
   $window.on('scroll', function(e) {
     $elements.each(function(i, elem) { //loop through each element
-      if ($(this).hasClass('animated')) // check if already animated
-        return;
-      animateMe($(this));
+      if (!$(this).hasClass('animated')) // check if already animated
+        animateMe($(this));
     });
   });
 });
@@ -51,53 +50,7 @@ function animateMe(elem) {
   var winTop = $(window).scrollTop(); // calculate distance from top of window
   var winBottom = winTop + $(window).height();
   var elemTop = $(elem).offset().top; // element distance from top of page
-  var elemBottom = elemTop + $(elem).height();
-  if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
-    // exchange classes if element visible
-    $(elem).removeClass('notAnimated').addClass('animated');
-  }
-}
-
-$(function() {
-  var $elements = $('.animateFade.notAnimated'); //contains all elements of nonAnimated class
-  var $window = $(window);
-  $window.on('scroll', function(e) {
-    $elements.each(function(i, elem) { //loop through each element
-      if ($(this).hasClass('animated')) // check if already animated
-        return;
-      animateMe($(this));
-    });
-  });
-});
-
-function animateMe(elem) {
-  var winTop = $(window).scrollTop(); // calculate distance from top of window
-  var winBottom = winTop + $(window).height();
-  var elemTop = $(elem).offset().top; // element distance from top of page
-  var elemBottom = elemTop + $(elem).height();
-  if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
-    // exchange classes if element visible
-    $(elem).removeClass('notAnimated').addClass('animated');
-  }
-}
-
-$(function() {
-  var $elements = $('.animateSlideup.notAnimated'); //contains all elements of nonAnimated class
-  var $window = $(window);
-  $window.on('scroll', function(e) {
-    $elements.each(function(i, elem) { //loop through each element
-      if ($(this).hasClass('animated')) // check if already animated
-        return;
-      animateMe($(this));
-    });
-  });
-});
-
-function animateMe(elem) {
-  var winTop = $(window).scrollTop(); // calculate distance from top of window
-  var winBottom = winTop + $(window).height();
-  var elemTop = $(elem).offset().top; // element distance from top of page
-  var elemBottom = elemTop + $(elem).height();
+  var elemBottom = elemTop + $(elem).height()/3;
   if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
     // exchange classes if element visible
     $(elem).removeClass('notAnimated').addClass('animated');
